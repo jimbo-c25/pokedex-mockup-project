@@ -1,0 +1,64 @@
+:root {
+    --default-background: hsl(0, 0%, 5%);
+    --default-text: hsl(0, 0%, 75%);
+    --header-background: hsl(0, 0%, 95%);
+    --fire-type: hsl(9, 85%, 55%);
+}
+
+h1 {
+    color: var(--header-background);
+}
+
+body {
+    background: var(--default-background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    gap: 1rem;
+}
+
+#search-input {
+    background-color: hsl(0, 0%, 20%);
+    color: var(--default-text);
+    font-size: .75rem;
+    padding: .5em;
+    border-radius: 5%;
+}
+
+#search-button {
+    background-color: hsl(0, 0%, 20%);
+    color: var(--default-text);
+    font-size: .75rem;
+    padding: .75em;
+    border-radius: 10%;
+}
+
+#creature-stats {
+    background: hsl(0, 0%, 15%);
+    color: var(--default-text);
+    width: 30vw;
+    height: 15vw;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 5%;
+}
+
+#types, span {
+    text-transform: uppercase;
+}
+
+#creature-name, #creature-id {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.fire {
+    background-color: var(--fire-type);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+}
